@@ -1,0 +1,320 @@
+
+.fixed-pic{
+    background-size: cover;
+  //- img(src="../img/sapa.jpg", alt="", srcset="")
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    padding: 40px 0 40px;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.4;
+    }
+}
+.block {
+    width: 42rem;
+    margin: 0.3rem;
+    padding: 0 0.5rem;
+    line-height: 3rem;
+    transition: 0.3s;
+}
+.item {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 50px;
+}
+.number {
+    span {
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4rem;
+        height: 4rem;
+        background-color: #32AAD6;
+        color: #ffffff;
+        text-align: center;
+        line-height: 4rem;
+    }
+}
+.title {
+    border-bottom: 1px dashed #ffffff;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #32AAD6;
+}
+.text {
+    color: #ffffff;
+}
+.fixed-pic2 {
+    // background-image: url(/src/img/Bali.jpg);
+    background-size: cover;
+    height: 30rem;
+    // border: 2px solid orange;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.carousel-pic {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.foo__middle {
+    padding: 45px 0px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.foo__block {
+    width: 25.2rem;
+    margin: 0.3rem;
+    padding: 0rem 2rem;
+    line-height: 3rem;
+}
+.foo__list {
+    list-style-type: none;
+}
+.foo__link {
+    text-decoration: none;
+    color: #2a2a2a;
+    transition: 0.3s;
+    &:hover {
+        color: #32AAD6;
+    }
+}
+.foo__title {
+    margin: 0px 0px 8px;
+    font-weight: 700;
+    color: #32AAD6;
+}
+.foo__copyright {
+    color: #ffffff;
+    background-color: #202134;
+    padding: 2.6rem 0;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+.copyright {
+    text-align: center;
+}
+.fa-facebook {
+    color: #3B5997;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0px 10px 0px 0px;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-youtube {
+    color: #FF0000;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0px 10px 0px 0px;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-facebook-messenger {
+    color: #006AFF;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0px 10px 0px 0px;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-at {
+    color: #FF0000;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0px 10px 0px 0px;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-cc-visa {
+    color: #1434CB;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0 10px 0 0;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-cc-jcb {
+    color: #000000;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0 10px 0 0;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-cc-mastercard {
+    color: #EB001B;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0 10px 0 0;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.fa-cc-paypal {
+    color: #00457C;
+    transition: 0.3s;
+    font-size: 3rem;
+    margin: 0 10px 0 0;
+    &:hover {
+        transform: rotate(360deg);
+        color: #32AAD6;
+    }
+}
+.contact-button {
+    ul {
+        display: flex;
+    }
+}
+@media (max-width: 1305px){
+    .fixed-pic{
+        height: 38rem;
+    }
+}
+@media (max-width: 1150px) {
+    .carousel {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .foo__title{
+        text-align: center;
+    }
+    .foo__item{
+        text-align: center;
+    }
+    .foo__link{
+        text-align: center;
+    }
+    .contact-button{
+        display: flex;
+        justify-content: center;
+    }
+    .foo__block2 {
+        width: 48rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .foo__block3 {
+        width: 32rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .fixed-pic {
+        height: 40rem;
+    }
+}
+@media (max-width:1015px) {
+    .foo__block2 {
+        width: 40rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .foo__block3 {
+        width: 26rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .block{
+        width: 34rem;
+    }
+    .fixed-pic {
+        height: 42rem;
+    }
+}
+@media (max-width:850px) {
+    .foo__block2 {
+        width: 32rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .foo__block3 {
+        width: 20rem;
+        padding: 0 2rem;
+        line-height: 3rem;
+    }
+    .foo__title{
+        text-align: left;
+    }
+    .foo__item{
+        text-align: left;
+    }
+    .contact-button{
+        display: flex;
+        justify-content: left;
+    }
+    .fixed-pic {
+        height: 42rem;
+    }
+    .block{
+        width: 34rem;
+    }
+}
+@media (max-width:710px) {
+    .foo__block {
+        width: 128rem;
+        display: block;
+    }
+    .foo__title{
+        text-align: left;
+    }
+    .foo__item{
+        text-align: left;
+    }
+    .contact-button{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .O__hidden {
+        display: none;
+    }
+    .cungcap {
+        display: block;
+        text-align: center;
+    }
+    .carousel {
+        justify-content: flex-start;
+    }
+    .foo__title {
+        margin: 0px 0px 1px;
+    }
+    .fixed-pic {
+        height: 72rem;
+    }
+    .block {
+        display: block;
+        width: 126rem;
+    }
+    .carousel-pic {
+        justify-content: flex-start;
+    }
+}
+
+

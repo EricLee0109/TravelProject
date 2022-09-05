@@ -1,0 +1,106 @@
+.nav-bg{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(63, 162, 224);
+}
+.nav-logo{
+    padding: 1.5rem;
+}
+.nav-logo a{
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fafafa;
+}
+.nav-logo span{
+    color: palevioletred;
+    text-decoration: overline;
+}
+.nav-logo i{
+    font-size: 4rem;
+    color: rgba(46, 0, 229, 0.452);
+}
+.nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.nav-search form label{
+    color: #fafafa;
+}
+.nav-search form input{
+    font-size: 2.5rem;
+    border-radius: 0.4rem;
+    width: 10rem;
+    transition: 0.8s;
+}
+.nav-search form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-icon:hover{
+    box-shadow: 3px 3px 5px 3px rgb(245, 183, 160);
+    transition: 0.5s;
+}
+.submit{
+    padding: 0.2 0rem;
+    height: 3rem;
+}
+input:invalid{
+    animation: shake .3s;
+}
+@keyframes shake {
+    25% { transform: translateX(4px)}
+    50% { transform: translateX(-4px)}
+    70% { transform: translateX(4px)}
+}
+.nav-search form i {
+    color: rgb(209, 26, 26);
+}
+.submit{
+    cursor: pointer;
+    width: 20rem;
+}
+.nav-search form input[type="text"]:focus{
+    width: 30rem;
+}
+.nav-contact {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+.nav-item{
+    display: flex;
+    top: 100%;
+}
+.nav-item i{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.nav-item__interface{
+    display: flex;
+    color: #fafafa;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+.nav-item__interface:hover{
+    background-color: blanchedalmond;
+    border-radius: 3rem;
+    font-size: 3.5rem;
+    color: cadetblue;
+    transition: 0.5s;
+}
+.nav-contact{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0 1rem;
+    color: #fafafa;
+}
