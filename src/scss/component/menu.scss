@@ -1,0 +1,317 @@
+.Vinh-part {
+
+    /* menu */
+    .nav-bg {
+        /* border: 2px solid red; */
+        height: 7rem;
+        background-color: #b1d4eb;
+    }
+
+    .container {
+        /* border: 2px solid aqua; */
+        max-width: 1320px;
+        margin: 0 auto;
+        height: 8rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 8rem;
+        align-items: center;
+    }
+
+    .nav_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_menu_list {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    /* làm logo */
+    .nav_logo a {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #03a4ed;
+        letter-spacing: 2px;
+    }
+
+    .nav_logo span {
+        color: #fe3f40;
+    }
+
+    /* làm menu */
+    .nav-menu_link {
+        /* border: 2px solid red; */
+        padding: 0 2rem;
+        text-decoration: none;
+        color: #2a2a2a;
+        font-size: 1.5rem;
+        transition: 0.3s;
+        background-color: #f5dce0;
+    }
+
+    .nav-menu_link:hover {
+        color: #fe3f40;
+        transition: 0.3s;
+    }
+
+    .btn-contact {
+        background-color: #fe3f40;
+        padding: 1rem 2rem;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .btn-contact:hover {
+        background-color: #03a4ed;
+        transition: 0.3s;
+    }
+
+    .actived {
+        color: #fe3f40;
+    }
+
+    /* repo */
+    .btn-toggle-menu {
+        display: none;
+    }
+
+    @media (max-width: 875px) {
+        .btn-contact {
+            display: none;
+        }
+
+        .nav {
+            justify-content: center;
+        }
+
+        .nav-menu_link {
+            padding: 0 1.2rem;
+        }
+    }
+
+    @media (max-width: 690px) {
+        .btn-toggle-menu {
+            display: block;
+        }
+
+        .nav {
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .nav_menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 9999;
+            transition: 0.3s;
+            height: 0;
+            overflow: hidden;
+
+        }
+
+        .btn-toggle-menu:checked~.nav_menu {
+            height: 300%;
+            transition: 0.3s;
+        }
+
+        .nav-menu_item {
+            width: 40rem;
+            height: 5rem;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-menu_item:hover {
+            background-color: #f2f2f2;
+        }
+
+        .btn-toggle-menu {
+            position: absolute;
+            right: 4rem;
+            width: 4rem;
+            height: 4rem;
+            opacity: 0;
+            z-index: 999;
+        }
+
+        .toggle-menu-icon {
+            position: absolute;
+            right: 4rem;
+            /* border: 2px solid red; */
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .toggle-menu-icon span {
+            display: block;
+            width: 100%;
+            background-color: black;
+            height: 3px;
+            transition: 0.3s;
+        }
+
+        .toggle-menu-icon span::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 80%;
+            height: 3px;
+            background-color: black;
+            transition: 0.3s;
+        }
+
+        .toggle-menu-icon span::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 80%;
+            height: 3px;
+            background-color: black;
+            transition: 0.3s;
+        }
+
+        .btn-toggle-menu:checked~.toggle-menu-icon span::before {
+            transform: rotate(45deg);
+            top: 50%;
+            left: -18%;
+            width: 140%;
+        }
+
+        .btn-toggle-menu:checked~.toggle-menu-icon span::after {
+            transform: rotate(-45deg);
+            bottom: 50%;
+            left: -18%;
+            width: 140%;
+        }
+
+        .btn-toggle-menu:checked~.toggle-menu-icon span {
+            width: 0;
+        }
+    }
+
+    /* menu */
+    .nav_menu,
+    .nav_menu_list a {
+        width: 100%;
+    }
+
+    .nav_menu_list::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .nav_menu_list a {
+        display: block;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .nav_menu_list li {
+        position: relative;
+    }
+
+    .nav_menu_list>li {
+        float: left;
+    }
+
+    .nav_menu_list,
+    .nav_menu_list ul {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        /* background: gold; */
+    }
+
+    .nav_menu_list ul li+li {
+        border-top: 1px solid #fff;
+    }
+
+    .nav_menu_list ul {
+        position: absolute;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .nav_menu_list>li ul,
+    .nav_menu_list ul ul {
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: 0.1;
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .nav_menu_list>li ul {
+        top: 130%;
+        left: 0;
+    }
+
+    .nav_menu_list ul ul {
+        left: 130%;
+        top: 0;
+    }
+
+    .nav_menu_list ul a {
+        width: 250px;
+    }
+
+    .nav_menu_list>li:hover>ul {
+        top: 100%;
+        opacity: 1;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    .nav_menu_list ul>li:hover>ul {
+        left: 100%;
+        opacity: 1;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    .menu-gold,
+    .menu-gold a {
+        color: #000;
+    }
+
+    .menu-gold a:hover {
+        background-color: #baf8f3;
+        color: #000;
+    }
+
+    body {
+        background-image: url("http://recruit.framgia.vn/wp-content/themes/framgia-vn/css/images/bg/banner.jpg");
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    /* ends */
+}
